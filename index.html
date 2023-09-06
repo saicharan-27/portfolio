@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/3277dfc8cd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h3>Hello,i'm </h3><h1>SaiCharan</h1><h2>And I'm a <span>Web Developer</span></h2>
+                    <a href="#" class="btn1">Hire Me</a>
+            </div>
+        </div>
+    </div>
+    <!--about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/user.png">
+                    </div> 
+                <div class="about-col-2"> 
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A self-motivated, hard-working and positive student looking for an internship in IT department as an intern to gain intensive experience in the information and technology industry. I seek to explore my career options in the IT sector with a bachelor's degree in Electrical and Electronic Engineering to build my technical and project management skills.</p>
+                <div class="tab-titles">
+                    <P class="tab-links active-link" onclick="opentab('Skills')">Skills</P>
+                    <P class="tab-links" onclick="opentab('Education')">Education</P>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>UI</span><br>Designing web interfaces</li>
+                        <li><span>Web Development</span><br>HTML,CSS & JS</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2022</span><br> UI Design Training at easy tutorial</li>
+                        <li><span>2022</span><br>B.Tech from JNTUA  Ananthapuram</li>
+                        <li><span>2018</span><br>+2 from Narayana junior college</li>
+                    </ul>
+                </div>
+                </div>               
+        </div>
+    </div>
+    <!---services---->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web designing is the process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience. User experience is central to the web designing process. Websites have an array of elements presented in ways that make them easy to navigate.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI Design</h2>
+                    <p>UI refers to the screens, buttons, toggles, icons, and other visual elements that you interact with when using a website, app, or electronic device. UX refers to the entire interaction you have with a product, including how you feel about the interaction.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/work1.png">
+                    <div class="layer">
+                        <h3>Iot Based Railway Track Crack Dection System</h3>
+                        <p>As per the study the existing systems are time consuming as well as uneconomical. It is the most economical solution provided in order to achieve good results of railways of our country in order to minimize of accidents caused. There by possible to save precious lives of passengers and loss of economy.</p>
+                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work2.png">
+                    <div class="layer">
+                        <h3>online shopping page </h3>
+                        <p>Online shopping or e-shopping is searching for and purchasing goods and services over the Internet through the use of a web browser</p>
+                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work3.png">
+                    <div class="layer">
+                        <h3>music page</h3>
+                        <p> A Web Page which presents one or more icons or hyperlinks that may be clicked on to access performances of music or at which music is played upon loading the Web Page.</p>
+                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!---contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-tittle">Contact Me</h1>
+                    <P><i class="fa-solid fa-paper-plane"></i> saicharan.ganji2@gmail.com</P>
+                    <P><i class="fa-solid fa-phone"></i>+91 9441085405</P>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="img/saicharan.pdf" Download class="btn btn1">Download CV</a>
+                </div>
+                <div class="contact-righr">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="your name" required>
+                        <input type="email" name="Email" placeholder="your email" required>
+                        <textarea name="Massage"row="6" placeholder="your massage"></textarea>
+                        <button type="submit" class="btn btn1">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
